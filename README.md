@@ -1,7 +1,6 @@
-####API de Gerenciamento de Tarefas (To-Do List)
-#1. Descrição do Projeto
-
-É uma API REST simples utilizando Node.js e Express.
+# API TRABALHO DE RECUPERAÇÃO - DESENVOLVIMENTO FULL STACK 
+## Descrição Do Projeto
+O trabalho é uma API REST simples utilizando Node.js e Express.
 A API servirá para gerenciar uma lista de tarefas (To-do list), com funcionalidades básicas
 de CRUD:
 
@@ -13,15 +12,52 @@ de CRUD:
 
 ● Excluir uma tarefa existente, também pelo ID
 
-As tarefas foram  armazenadas em memória (sem banco de dados), e a comunicação
-entre cliente e servidor será via JSON.
-Instruções para instalar as dependência
+As tarefas foram armazenadas em memória e a comunicação entre cliente e servidor será via JSON.
 
-##Pré-requisitos
+## Pré-Requisitos
+certifique-se de que você tem o **Node.js** e o **npm** (gerenciador de pacotes do Node.js) instalados em sua máquina. Você pode verificar as versões com os seguintes comandos:
+node -v
+npm -v
 
-Comando para iniciar o servidor Rotas disponíveis da API (método + rota + o que ela faz)
- 
-Exemplo de JSON que pode ser usado
 
-COMO TESTAR COM POSTMAN
 
+## Instalação
+Para configurar o projeto localmente, siga estes passos:
+
+Clone o repositório:
+git clone [URL_DO_REPOSITORIO]
+
+Navegue até o diretório do projeto:
+cd [NOME_DO_PROJETO]
+
+Instale as dependências:
+npm install
+
+## Rotas da Api 
+Método HTTP	Rota	Descrição
+ GET	/api/tarefa Retorna todos os recursos.
+
+POST	/api/tarefa	Cria um novo recurso.
+
+PUT	/api/tarefa/:id	Atualiza um recurso existente pelo ID.
+
+DELETE	/api/tarefa/:id	Deleta um recurso pelo ID.
+
+
+## Comando para iniciar o servidor
+npm start 
+
+npm /api.js
+
+## Como Testar com o Postman
+Você pode usar o Postman para testar todas as rotas da API.
+
+Abra o Postman e crie uma nova requisição.
+
+Insira a URL completa da rota (por exemplo, http://localhost:3000/api/tarefa).
+
+Selecione o método HTTP correspondente (GET, POST, PUT, DELETE).
+
+Para as requisições POST e PUT, selecione a aba Body, escolha a opção raw e o tipo JSON no menu suspenso. Cole o JSON de exemplo no corpo da requisição.
+
+Clique em Send para enviar a requisição e ver a resposta da API.
