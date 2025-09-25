@@ -1,4 +1,4 @@
-# API TRABALHO DE RECUPERAÇÃO - DESENVOLVIMENTO FULL STACK 
+# API TRABALHO DE RECUPERAÇÃO 
 ## Descrição Do Projeto
 O trabalho é uma API REST simples utilizando Node.js e Express.
 A API servirá para gerenciar uma lista de tarefas (To-do list), com funcionalidades básicas
